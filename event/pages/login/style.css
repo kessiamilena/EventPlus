@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: var(--fonte);
+}
+
+:root {
+    --fonte: 'Poppins', sans-serif;
+    --branco: #FFFFFF;
+    --rosa: #B51D44;
+    --vinho: #821B47;
+    --roxo: #511948;
+    --azul: #201849;
+    --corPlaceholder: #A6A0A0;
+
+}
+
+.body-login {
+    display: flex;
+    flex-direction: row;
+
+    width: 100%;    
+    height: 100vh;
+
+}
+
+
+/* LATERAL ESQUERDA ( ASIDE ) */
+
+.aside-login{
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    width: 50%;
+
+    background-color: var(--rosa);
+
+    transform: skew(349deg);
+
+}
+
+.img-login {
+    width: 400px;
+    
+    transform: skew(11deg);
+}
+
+/* LATERAL DIREITA ( MAIN ) */
+
+.main-login {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 15%;
+
+    width: 50%;
+
+    background-color: var(--branco);
+}
+
+.logo {
+    width: 200px;
+}
+
+.form-login {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 40px;
+}
+
+.form-login input {
+    width: 20vw;
+
+    padding-left: 20px;
+
+    border: none;
+    border-bottom: 1px solid #000000;
+}
+
+.form-login button {
+    width: 20vw;
+    padding: 8px;
+
+    color: var(--branco);
+    background-color: var(--rosa);
+
+    border: none;
+    border-radius: 8px;
+}
+
+.form-login::placeholder, .form-login span {
+    color: var(--corPlaceholder);
+}
